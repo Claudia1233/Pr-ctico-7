@@ -7,37 +7,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <h2> Ejercicio 07: Menú de Opciones</h2>
-    <p class="subtitulo">Simula un sistema con operaciones CRUD</p>
+  <main class="container">
+    <section class="card">
+      <h2> Ejercicio 07: Menú de Opciones</h2>
+      <p class="subtitulo">Simula un sistema con operaciones CRUD</p>
 
-    <div class="instrucciones">
-      <h3> Instrucciones</h3>
-      <p>
-        Selecciona una opción del menú desplegable y haz clic en <b>“Ejecutar Opción”</b>.<br>
-        El sistema usará una estructura <b>switch</b> para identificar qué opción elegiste y 
-        mostrará un mensaje personalizado con un color y diseño distinto.
-      </p>
-      <p><b>Opciones:</b> INS (Insertar), DEL (Eliminar), UPD (Actualizar), LST (Listar), END (Finalizar).</p>
-    </div>
+      <div class="instrucciones">
+        <h3> Instrucciones</h3>
+        <p>
+          Selecciona una opción del menú desplegable y haz clic en <b>“Ejecutar Opción”</b>.<br>
+          El sistema usará una estructura <b>switch</b> para identificar qué opción elegiste y
+          mostrará un mensaje personalizado con un color y diseño distinto.
+        </p>
+        <p><b>Opciones:</b> INS (Insertar), DEL (Eliminar), UPD (Actualizar), LST (Listar), END (Finalizar).</p>
+      </div>
 
-    <div class="control">
-      <select id="opcion">
-        <option value="">-- Selecciona una opción --</option>
-        <option value="INS">INSERTAR (INS)</option>
-        <option value="DEL">ELIMINAR (DEL)</option>
-        <option value="UPD">ACTUALIZAR (UPD)</option>
-        <option value="LST">LISTAR (LST)</option>
-        <option value="END">FINALIZAR (END)</option>
-      </select>
+      <div class="formulario">
+        <select id="opcion">
+          <option value="">-- Selecciona una opción --</option>
+          <option value="INS">INSERTAR (INS)</option>
+          <option value="DEL">ELIMINAR (DEL)</option>
+          <option value="UPD">ACTUALIZAR (UPD)</option>
+          <option value="LST">LISTAR (LST)</option>
+          <option value="END">FINALIZAR (END)</option>
+        </select>
+        <button id="btn-ejecutar">¡Ejecutar Opción!</button>
+      </div>
 
-      <button id="btn-ejecutar">¡Ejecutar Opción!</button>
-    </div>
+      <div id="resultado" class="mensaje"></div>
 
-    <div id="resultado" class="mensaje"></div>
-
-    <p class="nota">Selecciona una opción y haz clic en “Ejecutar”.</p>
-  </div>
+      <p class="nota">Selecciona una opción y haz clic en “Ejecutar”.</p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
