@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 07 - Menú con Switch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Ejercicio 07: Menú con Switch</h1>
+    <p>Selecciona una opción del menú para ver el mensaje correspondiente:</p>
+
+    <select id="opcion">
+      <option value="">-- Seleccione una opción --</option>
+      <option value="INS">INSERTAR</option>
+      <option value="DEL">ELIMINAR</option>
+      <option value="UPD">ACTUALIZAR</option>
+      <option value="LST">LISTAR</option>
+      <option value="END">SALIR</option>
+    </select>
+
+    <button id="btn-ejecutar">Ejecutar</button>
+
+    <div id="resultado" class="mensaje"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
