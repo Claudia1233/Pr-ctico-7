@@ -3,26 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio 07 - Menú con Switch</title>
+  <title>Ejercicio 07: Menú de Opciones</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="contenedor">
-    <h1>Ejercicio 07: Menú con Switch</h1>
-    <p>Selecciona una opción del menú para ver el mensaje correspondiente:</p>
+  <div class="card">
+    <h2> Ejercicio 07: Menú de Opciones</h2>
+    <p class="subtitulo">Simula un sistema con operaciones CRUD</p>
 
-    <select id="opcion">
-      <option value="">-- Seleccione una opción --</option>
-      <option value="INS">INSERTAR</option>
-      <option value="DEL">ELIMINAR</option>
-      <option value="UPD">ACTUALIZAR</option>
-      <option value="LST">LISTAR</option>
-      <option value="END">SALIR</option>
-    </select>
+    <div class="instrucciones">
+      <h3> Instrucciones</h3>
+      <p>
+        Selecciona una opción del menú desplegable y haz clic en <b>“Ejecutar Opción”</b>.<br>
+        El sistema usará una estructura <b>switch</b> para identificar qué opción elegiste y 
+        mostrará un mensaje personalizado con un color y diseño distinto.
+      </p>
+      <p><b>Opciones:</b> INS (Insertar), DEL (Eliminar), UPD (Actualizar), LST (Listar), END (Finalizar).</p>
+    </div>
 
-    <button id="btn-ejecutar">Ejecutar</button>
+    <div class="control">
+      <select id="opcion">
+        <option value="">-- Selecciona una opción --</option>
+        <option value="INS">INSERTAR (INS)</option>
+        <option value="DEL">ELIMINAR (DEL)</option>
+        <option value="UPD">ACTUALIZAR (UPD)</option>
+        <option value="LST">LISTAR (LST)</option>
+        <option value="END">FINALIZAR (END)</option>
+      </select>
+
+      <button id="btn-ejecutar">¡Ejecutar Opción!</button>
+    </div>
 
     <div id="resultado" class="mensaje"></div>
+
+    <p class="nota">Selecciona una opción y haz clic en “Ejecutar”.</p>
   </div>
 
   <script src="script.js"></script>
