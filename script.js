@@ -5,37 +5,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   boton.addEventListener("click", () => {
     const opcion = select.value;
-    resultado.className = "mensaje"; // resetea estilos
+    resultado.className = "mensaje"; // Reinicia clases
     let mensaje = "";
 
     switch (opcion) {
       case "INS":
-        mensaje = "Seleccionó INSERTAR";
+        mensaje = " Seleccionó INSERTAR (INS)";
         resultado.classList.add("ins");
         break;
 
       case "DEL":
-        mensaje = "Seleccionó ELIMINAR";
+        mensaje = " Seleccionó ELIMINAR (DEL)";
         resultado.classList.add("del");
         break;
 
       case "UPD":
-        mensaje = "Seleccionó ACTUALIZAR";
+        mensaje = " Seleccionó ACTUALIZAR (UPD)";
         resultado.classList.add("upd");
         break;
 
       case "LST":
-        mensaje = "Seleccionó LISTAR";
+        mensaje = " Seleccionó LISTAR (LST)";
         resultado.classList.add("lst");
         break;
 
       case "END":
-        mensaje = "Seleccionó SALIR";
+        mensaje = " Seleccionó FINALIZAR (END)";
         resultado.classList.add("end");
         break;
 
       default:
-        mensaje = "Debe seleccionar una opción válida.";
+        mensaje = " Debes seleccionar una opción válida.";
         resultado.classList.add("error");
         break;
     }
