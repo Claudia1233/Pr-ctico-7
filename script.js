@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   boton.addEventListener("click", () => {
     const opcion = select.value;
-    resultado.className = "mensaje"; // limpia clases anteriores
+    resultado.className = "mensaje";
     let mensaje = "";
 
     switch (opcion) {
@@ -13,27 +13,22 @@ document.addEventListener("DOMContentLoaded", () => {
         mensaje = " Seleccionó INSERTAR (INS)";
         resultado.classList.add("ins");
         break;
-
       case "DEL":
         mensaje = " Seleccionó ELIMINAR (DEL)";
         resultado.classList.add("del");
         break;
-
       case "UPD":
         mensaje = " Seleccionó ACTUALIZAR (UPD)";
         resultado.classList.add("upd");
         break;
-
       case "LST":
         mensaje = " Seleccionó LISTAR (LST)";
         resultado.classList.add("lst");
         break;
-
       case "END":
         mensaje = " Seleccionó FINALIZAR (END)";
         resultado.classList.add("end");
         break;
-
       default:
         mensaje = " Debes seleccionar una opción válida.";
         resultado.classList.add("error");
