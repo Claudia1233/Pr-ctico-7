@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   boton.addEventListener("click", () => {
     const opcion = select.value;
-    resultado.className = "mensaje"; // Reinicia clases
+    resultado.className = "mensaje"; // limpia clases anteriores
     let mensaje = "";
 
     switch (opcion) {
